@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="phonecatApp">
+<head runat="server">
+    <title></title>
+    <script src="JS/angular.min.js"></script> 
+  <script src="JS/app.js"></script>
+</head>
+<body ng-controller="PhoneListController">
+
+  <ul>
+    <li ng-repeat="phone in phones">
+      <span>{{phone.name}}</span>
+      <p>{{phone.snippet}}</p>
+        <span>{{phone.brand}}</span>
+    </li>
+  </ul>
+    <p>Total number of phones: {{phones.length}}</p>
+</body>
+</html>
